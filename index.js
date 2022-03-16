@@ -44,7 +44,7 @@ let hide = () => {
         for (let i = 0; i < arr.length; i++) {
             const array = arr[i]
             // displayElem.style.display = "block"
-            if (array.length >= 5) {
+            if (array.length <= 5) {
                 sent += `<span style="display: none">${array} </span> `
             } else {
                 // displayElem.style.display = "none"
