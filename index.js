@@ -51,16 +51,16 @@ let hide = () => {
                 //     sent += `<span style ="background-color: green;">${array}</span>`
 
                 // }
-            }else if (sent >= arr.length){
-                sent += `<mark style="color: black;">
-                ${array}
-            </mark> `
+            
             } else {
                 // displayElem.style.display = "none"
                 sent += array + ' '
             }
 
         }
+        // `<mark style="color: black;">
+        //         ${array}
+        //     </mark> `
         console.log(sent);
         displayElem.innerHTML = sent;
 
@@ -74,24 +74,14 @@ checkElem.addEventListener('click', hide)
 let theLongest = ()=> {
     let theString = textElem.value;
     let arr = theString.split(/\s/);
-    let long = " ";
-    if (checkElem.checked == true){
-        for (let i = 0; i < arr.length; i++){
-            let array = arr[i];
-            if(long >= array.length ){
-                long == array.length; 
-                array += `<mark style="color: black;">
-                ${array}
-            </mark> `
-            }else {
-                long += array + ' '
-            }
-        }
-        displayElem.innerHTML = long;
-    }
-    // else {
-    //     hide()
-    // }
+    let sorted = arr.sort( (a, b) => {
+        return b.length - a.length
+
+    })
+        console.log(sorted);
+        displayElem.innerHTML = `<mark style="color: black;">
+        ${sorted[0]}
+    </mark> `;
 
 }
 
