@@ -28,7 +28,7 @@ let myString = () => {
     }
 
 
-    console.log(sent);
+    // console.log(sent);
 
 
     displayElem.innerHTML = sent;
