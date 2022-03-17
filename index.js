@@ -21,8 +21,8 @@ let myString = () => {
              </mark> `
         }
         else {
-            sent += array + ' '
-            counter++
+            sent += array + ' '  
+            counter++    
         }
 
     }
