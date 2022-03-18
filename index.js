@@ -46,7 +46,7 @@ let hide = () => {
             const array = arr[i]
             // displayElem.style.display = "block"
             if (array.length <= 5) {
-                sent += `<span style="display: none">${array} </span> `
+                sent += ` <span style="display: none">${array} </span>`
                 // if (array.length > 8){
                 //     sent += `<span style ="background-color: green;">${array}</span>`
 
@@ -62,7 +62,7 @@ let hide = () => {
         //         ${array}
         //     </mark> `
         console.log(sent);
-        displayElem.innerHTML = sent;
+        displayElem.innerHTML = `<mark style="color: black;">${sent} </mark>`
 
     }
     else {
