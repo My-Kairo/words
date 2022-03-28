@@ -5,3 +5,33 @@
 /* .counter {
     display: none;
 } */
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    align-items: center;
+    margin-top: 150px;
+}
+h1 {
+    font-family: cursive;
+    color: rgb(95, 10, 10);
+}
+p {
+    font-style: italic;
+    /* color: lightblue; */
+}
+body {
+    background-image: url(https://a.rgbimg.com/users/b/ba/ba1969/600/mxc0xhM.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-clip: content-box;
+    background-attachment: fixed;
+}
+.longestW {
+    background-color: brown;
+}
+
+
+/* js */
